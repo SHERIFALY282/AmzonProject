@@ -16,7 +16,7 @@ public class AddedToCartPage {
 
     private By subTotal = By.cssSelector("#sc-subtotal-amount-activecart span");
     private By price = By.cssSelector(".sc-product-price");
-    private By cartIcon = By.id("nav-cart-text-container");
+    private By cartIcon = By.xpath("//a[@id='nav-cart']");
 
     public AddedToCartPage(WebDriver driver) {
         this.driver = driver;

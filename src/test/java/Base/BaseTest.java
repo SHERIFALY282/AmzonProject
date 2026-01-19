@@ -22,8 +22,8 @@ public class BaseTest {
     @BeforeClass
     public void setup(){
         ChromeOptions options= new ChromeOptions();
-        //options.addArguments("--headless");
-       // options.addArguments("--start-maximized");
+        options.addArguments("--headless");
+        options.addArguments("--start-maximized");
         driver= new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.navigate().to("https://www.amazon.eg/");
